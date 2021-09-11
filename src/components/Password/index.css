@@ -1,0 +1,191 @@
+.password-app-container {
+  background-image: linear-gradient(to bottom, #9ba9eb, #c3caea);
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-logo {
+  width: 150px;
+}
+
+.logos {
+  width: 50px;
+  padding: 12px;
+  border-right: 1px solid gray;
+}
+
+.no-pass-image {
+  width: 300px;
+}
+
+.no-desc {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.input {
+  outline: none;
+  border: none;
+  color: grey;
+  margin: 5px;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.input-container {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid grey;
+  margin: 12px;
+}
+
+.add-button {
+  background-color: rgb(18, 140, 240);
+  color: #fff;
+  padding: 15px;
+  margin: 15px;
+  border: none;
+  border-radius: 15px;
+}
+
+.desc {
+  color: #fff;
+  font-size: 20px;
+}
+
+.your-password-sm {
+  display: flex;
+  flex-direction: column;
+  background-color: #5763a5;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.top-desc {
+  border-bottom: 1px solid rgb(248, 246, 246);
+}
+
+.checkbox-container {
+  margin: 10px;
+}
+
+.password-container-sm {
+  background-color: #5763a5;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.your-password-lg {
+  display: none;
+}
+
+.label {
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.pass-image {
+  width: 40vh;
+  margin: 10px;
+}
+
+.form-container {
+  background-color: #454f84;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.password-container-lg {
+  display: none;
+}
+
+.top-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.all-password-list {
+  padding-inline-start: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.count-pass {
+  font-weight: 600;
+  font-size: 20px;
+  color: yellow;
+}
+
+@media (min-width: 768px) {
+  .password-container-lg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #5763a5;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+  .password-container-sm {
+    display: none;
+  }
+  .pass-image {
+    order: 2;
+    width: 350px;
+  }
+  .your-password-sm {
+    display: none;
+  }
+
+  .your-password-lg {
+    display: flex;
+    flex-direction: column;
+    background-color: #5763a5;
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .top-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+  }
+
+  .bottom-desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkbox-container {
+    align-self: flex-end;
+  }
+
+  .all-password-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: flex-start;
+  }
+
+  .no-pass-image {
+    width: 600px;
+  }
+
+  .no-desc {
+    font-size: 40px;
+  }
+}
